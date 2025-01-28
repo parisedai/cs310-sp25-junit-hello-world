@@ -3,6 +3,7 @@ import org.junit.*;
 
 import static org.junit.Assert.*;
 
+
 public class ExampleTest {
 
     private Main main;
@@ -48,5 +49,12 @@ public class ExampleTest {
         String actual = main.reverse("Hickory Dickory Dock");
         assertEquals(expectedReverse3, actual);
     }
+    @Test
+    public void testReverseWithCustomString() {
+        String input = "hello";
+        String expected = "olleh";
+        assertEquals(expected, main.reverse(input));
+}
+
     
 }

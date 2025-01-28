@@ -1,5 +1,6 @@
 package edu.jsu.mcis.cs310;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -16,8 +17,10 @@ public class Main {
         return "Hello, World!";
     }
     
-    public String reverse(String message) {
-        return message;
-    }
     
+    public String reverse(String input) {
+    StringBuilder reversed = new StringBuilder(input);
+    return reversed.reverse().toString();
+    }
+
 }
